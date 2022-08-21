@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100">
+        <TextView
+            android:textAlignment="center"
+            android:text="Example With Push Button"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="90">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User ID"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/et_userId_third"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Id"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User PW"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/et_userPw_third"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Pasword"/>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_remember"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Remember"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_toFourthTask"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="To Fourth Task -->"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#61BA21"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
